@@ -1,0 +1,145 @@
+{
+  "info": {
+    "_postman_id": "e5fc510c-4bea-49d4-bd99-04cf75824dc4",
+    "name": "Proyecto03Encuestas",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53286016",
+    "_collection_link": "https://go.postman.co/collection/53286016-e5fc510c-4bea-49d4-bd99-04cf75824dc4?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Crear Encuesta",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"pregunta\": \"¿Cual es tu lenguaje de progranacion que no te gusta?\",\r\n    \"opciones\": [\r\n        {\"valor\": \"Java\"},\r\n        {\"valor\": \"Javascript\"},\r\n        {\"valor\": \"Python\"},\r\n        {\"valor\": \"PHP\"},\r\n        {\"valor\": \"C#\"}\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/encuestas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "encuestas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Encuestas",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"pregunta\": \"¿Cual es tu lenguaje de progranacion que no te gusta?\",\r\n    \"opciones\": [\r\n        {\"valor\": \"Java\"},\r\n        {\"valor\": \"Javascript\"},\r\n        {\"valor\": \"Python\"},\r\n        {\"valor\": \"PHP\"},\r\n        {\"valor\": \"C#\"}\r\n    ]\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/encuestas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "encuestas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Obtener Encuesta",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"pregunta\": \"¿Cual es tu lenguaje de progranacion que no te gusta?\",\r\n    \"opciones\": [\r\n        {\"valor\": \"Java\"},\r\n        {\"valor\": \"Javascript\"},\r\n        {\"valor\": \"Python\"},\r\n        {\"valor\": \"PHP\"},\r\n        {\"valor\": \"C#\"}\r\n    ]\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/encuestas/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "encuestas",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar Encuesta",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"pregunta\": \"¿Cual es tu lenguaje de progranacion que mas te desagrada?\",\r\n    \"opciones\": [\r\n        {\"valor\": \"Java\"},\r\n        {\"valor\": \"Javascript\"},\r\n        {\"valor\": \"Python\"},\r\n        {\"valor\": \"PHP\"},\r\n        {\"valor\": \"C#\"},\r\n        {\"valor\": \"C++\"}\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/encuestas/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "encuestas",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar Encuesta",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"pregunta\": \"¿Cual es tu lenguaje de progranacion que mas te desagrada?\",\r\n    \"opciones\": [\r\n        {\"valor\": \"Java\"},\r\n        {\"valor\": \"Javascript\"},\r\n        {\"valor\": \"Python\"},\r\n        {\"valor\": \"PHP\"},\r\n        {\"valor\": \"C#\"},\r\n        {\"valor\": \"C++\"}\r\n    ]\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/encuestas/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "encuestas",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
