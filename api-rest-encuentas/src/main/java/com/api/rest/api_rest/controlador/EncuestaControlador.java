@@ -47,7 +47,7 @@ public class EncuestaControlador {
     @PutMapping("/encuestas/{encuestaId}")
     public ResponseEntity<?> actualizarEncuesta(@RequestBody Encuesta encuesta, @PathVariable Long encuestaId) {
         encuesta.setId(encuestaId);
-        encuesta = encuestaRepositorio.save(encuesta);
+        encuestaRepositorio.save(encuesta);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
