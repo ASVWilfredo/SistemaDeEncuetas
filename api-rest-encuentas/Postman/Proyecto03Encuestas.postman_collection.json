@@ -14,7 +14,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"pregunta\": \"¿Cual es tu lenguaje de progranacion que mas dificil para ti\",\r\n    \"opciones\": [\r\n        {\"valor\": \"Java\"},\r\n        {\"valor\": \"Javascript\"},\r\n        {\"valor\": \"Python\"},\r\n        {\"valor\": \"PHP\"},\r\n        {\"valor\": \"C#\"}\r\n    ]\r\n}",
+          "raw": "{\r\n    \"pregunta\": \"¿Cual es tu lenguaje de progranacion que mas dificil para ti\",\r\n    \"opciones\": [\r\n        {\"valor\": \"Java\"}\r\n    ]\r\n}",
           "options": {
             "raw": {
               "language": "json"
@@ -48,14 +48,25 @@
           "raw": "{\r\n    \"pregunta\": \"¿Cual es tu lenguaje de progranacion que no te gusta?\",\r\n    \"opciones\": [\r\n        {\"valor\": \"Java\"},\r\n        {\"valor\": \"Javascript\"},\r\n        {\"valor\": \"Python\"},\r\n        {\"valor\": \"PHP\"},\r\n        {\"valor\": \"C#\"}\r\n    ]\r\n}"
         },
         "url": {
-          "raw": "http://localhost:8080/encuestas",
+          "raw": "http://localhost:8080/v2/encuestas?page=0&size=1",
           "protocol": "http",
           "host": [
             "localhost"
           ],
           "port": "8080",
           "path": [
+            "v2",
             "encuestas"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "0"
+            },
+            {
+              "key": "size",
+              "value": "1"
+            }
           ]
         }
       },

@@ -1,4 +1,4 @@
-package com.api.rest.api_rest.controlador;
+package com.api.rest.api_rest.controlador.v2;
 
 import com.api.rest.api_rest.dto.OpcionCantidad;
 import com.api.rest.api_rest.dto.ResultadoVoto;
@@ -7,12 +7,16 @@ import com.api.rest.api_rest.repositorios.VotoRepositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
 
-@RestController
+@RestController("ResultadoControladorV2")
+@RequestMapping("/v2")
 public class ResultadoControlador {
     @Autowired
     private VotoRepositorio votoRepositorio;
